@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9716A83-09D0-42EE-AE5B-99EDE7AB6DAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionCreateEditForm.cs" />
+    <Compile Include="ActionCreateSalaryProcess.cs" />
+    <Compile Include="AddressControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddressControl.Designer.cs">
+      <DependentUpon>AddressControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsDictionary.cs" />
+    <Compile Include="CusomEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CusomEditForm.Designer.cs">
+      <DependentUpon>CusomEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DepartmentControl.Designer.cs">
+      <DependentUpon>DepartmentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditEntryForm.Designer.cs">
+      <DependentUpon>EditEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmptySpace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmptySpace.Designer.cs">
+      <DependentUpon>EmptySpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacultyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FacultyControl.Designer.cs">
+      <DependentUpon>FacultyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterPropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterPropertiesForm.Designer.cs">
+      <DependentUpon>FilterPropertiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IEditorValue.cs" />
+    <Compile Include="LabelCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabelCheckBox.Designer.cs">
+      <DependentUpon>LabelCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabelNumericUpDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabelNumericUpDown.Designer.cs">
+      <DependentUpon>LabelNumericUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabelTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LabelTextBox.Designer.cs">
+      <DependentUpon>LabelTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecturerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LecturerControl.Designer.cs">
+      <DependentUpon>LecturerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinkLabelTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LinkLabelTextBox.Designer.cs">
+      <DependentUpon>LinkLabelTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PersonControl.Designer.cs">
+      <DependentUpon>PersonControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActionViewProcess.cs" />
+    <Compile Include="Process\ProcessView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\ProcessView.Designer.cs">
+      <DependentUpon>ProcessView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\ProcessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\ProcessForm.Designer.cs">
+      <DependentUpon>ProcessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\LecturerSalaryControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Process\LecturerSalaryControl.Designer.cs">
+      <DependentUpon>LecturerSalaryControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\LecturerSalaryProcess.cs" />
+    <Compile Include="Process\Process.cs" />
+    <Compile Include="Process\ProcessSalaryDataObject.cs" />
+    <Compile Include="Process\ProcessUtils.cs" />
+    <Compile Include="Process\SalaryProcess.cs" />
+    <Compile Include="Process\SalaryProcessControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Process\SalaryProcessControl.Designer.cs">
+      <DependentUpon>SalaryProcessControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Process\StudentSalaryProcess.cs" />
+    <Compile Include="Process\StudentSalaryProcessControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Process\StudentSalaryProcessControl.Designer.cs">
+      <DependentUpon>StudentSalaryProcessControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertiesSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertiesSettings.Designer.cs">
+      <DependentUpon>PropertiesSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectObjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectObjectForm.Designer.cs">
+      <DependentUpon>SelectObjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectTypeForm.Designer.cs">
+      <DependentUpon>SelectTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentControl.Designer.cs">
+      <DependentUpon>StudentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeamControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TeamControl.Designer.cs">
+      <DependentUpon>TeamControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeViewCreator.cs" />
+    <Compile Include="UniversityControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UniversityControl.Designer.cs">
+      <DependentUpon>UniversityControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WrapperUtils.cs" />
+    <EmbeddedResource Include="AddressControl.resx">
+      <DependentUpon>AddressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CusomEditForm.resx">
+      <DependentUpon>CusomEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentControl.resx">
+      <DependentUpon>DepartmentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditEntryForm.resx">
+      <DependentUpon>EditEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmptySpace.resx">
+      <DependentUpon>EmptySpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacultyControl.resx">
+      <DependentUpon>FacultyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterPropertiesForm.resx">
+      <DependentUpon>FilterPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabelCheckBox.resx">
+      <DependentUpon>LabelCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabelNumericUpDown.resx">
+      <DependentUpon>LabelNumericUpDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabelTextBox.resx">
+      <DependentUpon>LabelTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecturerControl.resx">
+      <DependentUpon>LecturerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkLabelTextBox.resx">
+      <DependentUpon>LinkLabelTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonControl.resx">
+      <DependentUpon>PersonControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\ProcessView.resx">
+      <DependentUpon>ProcessView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\ProcessForm.resx">
+      <DependentUpon>ProcessForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\LecturerSalaryControl.resx">
+      <DependentUpon>LecturerSalaryControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\SalaryProcessControl.resx">
+      <DependentUpon>SalaryProcessControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\StudentSalaryProcessControl.resx">
+      <DependentUpon>StudentSalaryProcessControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesSettings.resx">
+      <DependentUpon>PropertiesSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectObjectForm.resx">
+      <DependentUpon>SelectObjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectTypeForm.resx">
+      <DependentUpon>SelectTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StudentControl.resx">
+      <DependentUpon>StudentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamControl.resx">
+      <DependentUpon>TeamControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniversityControl.resx">
+      <DependentUpon>UniversityControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\UI.Process.LecturerSalaryProcess.datasource" />
+    <None Include="Properties\DataSources\UI.Process.ProcessLecturerSalaryDataObject.datasource" />
+    <None Include="Properties\DataSources\UI.Process.ProcessSalaryDataObject.datasource" />
+    <None Include="Properties\DataSources\UI.Process.ProcessStudentSalaryDataObject.datasource" />
+    <None Include="Properties\DataSources\University.DataObjects.Address.datasource" />
+    <None Include="Properties\DataSources\University.DataObjects.Department.datasource" />
+    <None Include="Properties\DataSources\University.DataObjects.Faculty.datasource" />
+    <None Include="Properties\DataSources\University.DataObjects.Person.datasource" />
+    <None Include="Properties\DataSources\University.DataObjects.Team.datasource" />
+    <None Include="Properties\DataSources\University.DataObjects.University.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\University\DataManager.csproj">
+      <Project>{ef7989b4-340a-40d7-a1eb-54e880c49d37}</Project>
+      <Name>DataManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
